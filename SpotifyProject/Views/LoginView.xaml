@@ -5,12 +5,16 @@
              xmlns:vm="clr-namespace:SpotifyProject.ViewModels"
              x:Class="SpotifyProject.Views.LoginView"
              x:DataType="vm:LoginViewModel"
+             Shell.NavBarIsVisible="False"
              Title="Login">
     <Grid>
         <Image Source="goril.jpg" Aspect="AspectFill" />
         <Button Text=" Login to Spotify"
+                Command="{Binding OpenLoginCommand}"
                 VerticalOptions="Center"
-                HorizontalOptions="Center"    
-
+                HorizontalOptions="Center" />
+        <Frame x:Name="Login" IsVisible="False" CornerRadius="10" BorderColor="Black" Padding="20"
+            ><WebView x:Name="LoginWeb" IsVisible="False" />
+        </Frame>
     </Grid>
 </mvvm:TinyView>

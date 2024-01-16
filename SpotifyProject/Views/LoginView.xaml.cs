@@ -11,4 +11,25 @@ public partial class LoginView
 
         BindingContext = loginViewModel;
     }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        loginViewModel.PropertyChanged += LoginViewModel_PropertyChanged;
+    }
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+        loginViewModel.PropertyChanged -= LoginViewModel_PropertyChanged;
+    }
+    private void LoginViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        if(e.PropertyName == nameof(loginViewModel.ShowLogin))
+        {
+            
+        }
+    }
+
 }
