@@ -1,27 +1,27 @@
-namespace SpotifyProject;
-
-public partial class mathgamepage : ContentPage
+namespace SpotifyProject
 {
-	public mathgamepage()
-	{
-		InitializeComponent();
-	}
-
-    public mathgamepage(string text)
+    public partial class mathgamepage : ContentPage
     {
-    }
+        public mathgamepage()
+        {
+            InitializeComponent();
+        }
 
-    private void OnGameChosen(object sender, EventArgs e)
-    {
-		Button button = (Button)sender;
+        public mathgamepage(string text)
+        {
+            // Eksik: Yeni bir sayfa oluþtururken burada ne yapýlacaðýný belirtmeniz gerekir.
+        }
 
-		Navigation.PushAsync(new mathgamepage(button.Text));
-    }
-	
-	private void OnViewPreviousGameChosen(object sender, EventArgs e)
-    {
-		Button button = (Button)sender;
+        private void OnGameChosen(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
 
-		Navigation.PushAsync(new PreviousGames(button.Text));
-    }
-}
+            Navigation.PushAsync(new mathgamepage(button.Text));
+        }
+
+        private void OnViewPreviousGameChosen_clicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync(nameof(PreviousGames));
+        }
+    } // mathgamepage sýnýfý burada kapatýlmalýdýr.
+} // Namespace burada kapatýlmalýdýr.

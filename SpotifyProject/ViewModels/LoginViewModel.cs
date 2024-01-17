@@ -14,8 +14,7 @@ namespace SpotifyProject.ViewModels
         [ObservableProperty]
         private bool showLogin;
 
-        [ObservableProperty]
-        private bool showMathGame;
+   
 
 
         [RelayCommand]

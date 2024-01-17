@@ -6,7 +6,9 @@
     <VerticalStackLayout>
         <Label 
             Text="Welcome to previous games!"
+            TextColor="Black"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
+    

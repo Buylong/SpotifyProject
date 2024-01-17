@@ -43,7 +43,7 @@
                     Grid.ColumnSpan="4"
                     BackgroundColor="Cyan"
                     Text="Geçmiş İşlemler"
-                    Clicked="OnViewPreviousGameChosen"/>
+                    Clicked="OnViewPreviousGameChosen_clicked"/>
             
         </Grid>
            
