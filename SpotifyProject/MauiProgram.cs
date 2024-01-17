@@ -13,6 +13,17 @@ global using SpotifyProject.ViewModels;
 global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
 global using Microsoft.Maui.Controls;
+global using Microsoft.Extensions.Logging;
+
+global using CommunityToolkit;
+global using System.Text.Json.Serialization;
+global using System;
+global using System.Net;
+global using System.Text;
+global using System.Text.Json;
+global using System.Windows.Input;
+global using System.Collections.ObjectModel;
+global using CommunityToolkit.Maui;
 
 namespace SpotifyProject;
 
@@ -23,6 +34,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkitMediaElement()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

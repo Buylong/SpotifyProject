@@ -50,9 +50,11 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\goril.jpg" />
+	  <None Remove="Resources\Raw\song.mp4" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="2.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
 		<PackageReference Include="TinyMvvm.Maui" Version="4.3.1" />
