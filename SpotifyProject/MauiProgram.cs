@@ -12,7 +12,7 @@ global using SpotifyProject.ViewModels;
 
 global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
-
+global using Microsoft.Maui.Controls;
 
 namespace SpotifyProject;
 

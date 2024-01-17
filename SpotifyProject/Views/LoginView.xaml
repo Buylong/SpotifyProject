@@ -12,7 +12,16 @@
         <Button Text=" Login to Spotify"
                 Command="{Binding OpenLoginCommand}"
                 VerticalOptions="Center"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                Grid.Row="100"
+                Grid.Column="100"/>
+                
+        
+        <Button Text="login to math game" x:Name="mathgamebutton" Clicked="mathgamebutton_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="Start">
+           
+        </Button>
         <Frame x:Name="Login" IsVisible="False" CornerRadius="10" BorderColor="Black" Padding="20"
             ><WebView x:Name="LoginWeb" IsVisible="False" />
         </Frame>
